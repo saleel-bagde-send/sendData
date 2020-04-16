@@ -1,0 +1,36 @@
+MCQ_No,Question,Bin,Level,Option_A,Option_B,Option_C,Option_D,Marks,Correct_Answer,Explanation
+1,Which clause is used to “filter out unwanted Groups”?,infoway,2,HAVING,FROM,WHERE,SELECT,1,A,""""""
+2,Which clause is used to “Modify the existing field of the table”?,infoway,1,ALTER,FROM,SELECT,MODIFY,1,A,""""""
+3,“MODIFY” is used with which “Query clause”?,infoway,1,WHERE,FROM,ALTER,ORDER BY,1,C,""""""
+4,Which among the following tags belong to Data Manipulation language?,infoway,1,UPDATE,ALTER,MODIFY,All of the mentioned,1,A,""""""
+5,Is duplicate entry of primary key is allowed in SQL?,infoway,1,Yes,No,Depends,None of the mentioned,1,B,Primary key are used to uniquely define attributed stored in the table.
+6,Which Key is used to link two tables in Mysql?,infoway,1,Primary Key,Foreign Key,Both a and b,None of the mentioned,1,B,Foreign Key is only the Key which can link two tables.
+7,"The following query belongs to which condition types?
+
+SELECT fname FROM person WHERE dept_id= (SELECT dept_id FROM department WHERE names='s');",infoway,2,Equality condition,Inequality condition,Range condition,All of the mentioned,1,A,In the following query column equate to the value returned by subquery.
+8,"Is the following query belongs to the “Equality condition”?
+
+SELECT product_type.name, product.name FROM product_type INNER JOIN Product ON product_type.dept=Product.dept WHERE product_type.name = 'customers_accounts';",infoway,2,Yes,No,Depends,None of the mentioned,1,A,""""""
+9,Fill the blanks with suitable options? BETWEEN ______ AND ______,infoway,1,Upper and lower limit,Lower and upper limit,Both a and b,None of the mentioned,1,B,""""""
+10,"Find the error in the following query?
+
+SELECT cust_id, fed_id FROM customer WHERE cust_id = 'I' AND fed_id BETWEEN 5000-00-000 AND 9999-999-000;",infoway,3,Yes,No,Range too high to compare,None of the mentioned,1,B,"In the following query, there will be no error in executing 5000-00-000 AND 9999-999-000 as it is an expression."
+11,"What will be the output of the following query?
+
+SELECT emp_id, fname, lname FROM employee WHERE LEFT (fname, 1) ='F' OR LEFT (lname, 1) ='F';",infoway,2,Only those employees are selected whose first name and last name started with 'F',Only those employees are selected whose first name started with ‘F’ but last name can be starts with any other letter,Only those employees are selected whose first name and last name started with any other letter except 'F',None of the mentioned,1,A,""""""
+12,Which of the following statements is/are correct?,infoway,3,True AND true =true,True AND false= false,False AND false= false,All of the mentioned,1,D,""""""
+13,Which operator is used to check whether the expression is 'NULL'?,infoway,1,IS NULL,NOT NULL,ON,None of the mentioned,1,A,""""""
+14,"What will be the output of the following query?
+
+SELECT fname FROM person WHERE emp_id != 6;",infoway,2,Only those names whose emp_id is not equal to 6,Only those names whose emp_id is equal to 6,Both a and b,None of the mentioned,1,A,""""""
+15,Commit command is used for,infoway,1,To restore the old values,To save the current table,To save the current transaction,To recover the old table,1,C,""""""
+16,The value of Primary key,infoway,1,can be duplicated,can be null,cannot be null,none of these,1,C,""""""
+17,Drop table tablename is,infoway,1,DML Statement,DDL Statement,Query Statement,None of the above,1,B,""""""
+18,"In SQL, __________ is an Aggregate function.",infoway,1,SELECT,CREATE,AVG,MODIFY,1,C,""""""
+19,The primary key is selected from the:,infoway,1,composite keys.,determinants.,foreign keys.,candidate keys.,1,D,""""""
+20,If there is more than one key for relation schema in DBMS then each key in relation schema is classified as,infoway,1,Prime key,Super key,Candidate key,Primary key,1,C,""""""
+21,Which join refers to join records from the write table that have no matching key in the left table are include in the result set:,infoway,1,Left outer join,Full outer join,Right outer join,Half outer join,1,C,""""""
+22,A attribute in a relation is a foreign key if the _______ key from one relation is used as an attribute in that relation .,infoway,1,Candidate,Primary,Super,Sub,1,B,""""""
+23,Which of the following statements creates a new table temp instructor that has the same schema as instructor.,infoway,1,create table temp_instructor;,Create table temp_instructor like instructor;,Create Table as temp_instructor;,Create table like temp_instructor;,1,B,""""""
+24,A relational database consists of a collection of,infoway,1,Table,Fields,Records,Keys,1,A,""""""
+25,"Which one of the following provides the ability to query information from the database and to insert tuples into, delete tuples from, and modify tuples in the database ?",infoway,1,DML(Data Manipulation Langauge),DDL(Data Definition Langauge),Query,Relational Schema,1,A,""""""

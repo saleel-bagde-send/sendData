@@ -1,0 +1,38 @@
+MCQ_No,Question,Bin,Level,Option_A,Option_B,Option_C,Option_D,Marks,Correct_Answer,Explanation
+1,"In a LIKE clause,You can ask for any 6 letter value by writing:",infoway,2,LIKE {6},LIKE ______ (that's Six underscore characters),lIKE ^[6}$,LIKE ??????,1,B,""""""
+2,Which of thers is not a valid name for a column.,infoway,1,To,From,Far,Near,1,B,Because From is the reserve word
+3,Which statement is used o insert a new data in a table?,infoway,1,Insert New,Add New,Insert Into,Update,1,C,""""""
+4,WhiCh of the following is an aggregate function in mySQL?,infoway,2,LIKE,UNION,GROUP BY,MAX,1,D,""""""
+5,Which command is used to remove all rows from a table which cannot be rolled back.,infoway,2,Delete,Truncate,Remove,Both A and B,1,B,"because Truncate is DDL command, and all DDL commands are auto commited."
+6,How much character are allowed to create database name.,infoway,2,64,40,70,75,1,A,""""""
+7,Which of these commands will delete a table called ABC If you have appropriate authority.,infoway,2,Drop table ABC,Delete ABC where confirm = 'YES',Drop ABC,Drop ABC where confirm = 'YES',1,A,""""""
+8,"If you want to remove permission given by GRANT, you should use",infoway,2,REVOKE,UNDO,UNGRANT,ROLLBACK,1,A,""""""
+9,To remove duplicate rows from the result set of a SELECT use the following keyword:,infoway,1,NO DUPLICATE,UNIQUE,DISTINCT,None of the above,1,C,""""""
+10,Which statement is used to count number of rows in table?,infoway,1,SELECT COUNT(*) FROM table_name;,SELECT COUNT ALL(*) FROM table_name;,SELECT ROWS(*) FROM table_name;,All the above,1,A,""""""
+11,Which clause is used to sort the result of SELECT statement?,infoway,1,SORT BY,ORDER BY,ARRENGE BY,None of the above,1,B,""""""
+12,"In order to add a new column to an existing table in SQL, we can use the command",infoway,1,MODIFY TABLE,EDIT TABLE,ALTER TABLE,ALTER COLUMNS,1,C,""""""
+13,Which of the following ways below are the correct way to get the current date?,infoway,1,CURDATE() ,CURRENT_DATE,CURRENT_DATE(),All of the above,1,D,""""""
+14,What is the meaning of “Temporary Tables” in Mysql?,infoway,2,Rows returned by sub query,Permanent tables,Virtual tables,All of the mentioned,1,A,""""""
+15,COUNT keyword belongs to which categories in Mysql?,infoway,1,Aggregate functions,Operators,Clauses,All of the mentioned,1,A,""""""
+16,"If emp_id contain the following set {-1, -2, 2, 3, -3, 1}, what will be the output on execution of the given query? 
+
+SELECT emp_id FROM person ORDER BY emp_id;",infoway,2,"{-3, -2, -1, 1, 2, 3}","{-1, 1, -2, 2, -3, 3}","{1, 2, 3, -1, -2, -3}",None of the mentioned,1,A,""""""
+17,"If emp_id contain the following set {9, 7, 6, 4, 3, 1, 2}, what will be the output on execution of the given query? 
+
+SELECT emp_id FROM person ORDER BY emp_id DESC;",infoway,2,"{9, 7, 6, 4, 3, 1, 2}","{1, 2, 3, 4, 6, 7 , 9}","{2, 1, 3, 4, 6, 7, 9}",None of the mentioned,1,A,""""""
+18,"Is there any error in the following query?
+
+SELECT emp_id, title, start_date, fname, fed_id FROM person ORDER BY RIGHT (fed_id, 3);",infoway,2,Yes,No error,Depends,None of the mentioned,1,B,""""""
+19,"What will be the output of a query given below?
+
+SELECT person_id, Fname, lname FROM person;",infoway,1,"Show only columns (person_id, Fname, lname) and rows related to these columns","Show only columns (person_id, Fname, lname)",Show all rows,"Show all columns except (person_id, Fname, lname)",1,A,“SELECT” clause is used to show all rows and columns that are mention with the query.
+20,Which Clause is used to select a particular row from the set of row in an existing table?,infoway,1,WHERE,FROM,ALTER,None of the mentioned,1,A,""""""
+21,"In the following query, what does “person_id” stands for?
+
+CREATE TABLE person (person_ id SMALLINT UNSIGNED, fname VARCHAR(20), lname VARCHAR(20), CONSTRAINT pk_person PRIMARY KEY (person_id));",infoway,1,Normal attribute of the table,Unique key,Composite key,Primary key,1,D,""""""
+22,"In the following query ""person_id"" can be
+
+SELECT person_id, fname,l name, Birth_data FROM person WHERE person_id=1;",infoway,1,Only Primary Key,Primary Key or any other Attribute,Only Attribute but not a primary Key,None of the mentioned,1,B,""""""
+23,"INSERT is same as ""UPDATE"" ?",infoway,1,NO,YES,May be,None of the mentioned,1,A,“INSERT “is used to entering the data in the newly created table while “UPDATE” is used to modify the data which is already inserted with help of statement “INSERT”.
+24,Which command is used for the table definition in Mysql?,infoway,1,DESC table_name;,SHOW table_name,DESC,None of the mentioned,1,A,""""""
+25,Which clause is used to “Filters out unwanted data”?,infoway,1,FROM,WHERE,SELECT,ORDER BY,1,B,""""""

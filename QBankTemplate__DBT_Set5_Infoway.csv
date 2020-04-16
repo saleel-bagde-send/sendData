@@ -1,0 +1,30 @@
+MCQ_No,Question,Bin,Level,Option_A,Option_B,Option_C,Option_D,Marks,Correct_Answer,Explanation
+1,Which of the following query is correct for using comparision operators in SQL?,infoway,1,"SELECT name, course_name FROM student WHERE age>50 and <80;","SELECT name, course_name FROM student WHERE age>50 and age <80;","SELECT name, course_name FROM student WHERE age>50 and WHERE age<80;",None of these,1,B,""""""
+2,The SQL keyword BETWEEN is used:,infoway,1,to limit the columns displayed.,for ranges.,as a wildcard.,None of these is correct.,1,B,""""""
+3,SQL can be used to:,infoway,1,create database structures only.,query database data only.,modify database data only.,All of the above can be done by SQL.,1,D,""""""
+4,A subquery in an SQL SELECT statement is enclosed in:,infoway,2,parenthesis -- (...).,brackets -- [...].,CAPITAL LETTERS.,braces -- {...}.,1,A,""""""
+5,The result of an SQL SELECT statement is as _____________.,infoway,1,file,report,table,form,1,C,""""""
+6,"In an SQL SELECT statement querying a single table, according to the SQL-92 standard the asterisk(*) means that:",infoway,1,all columns of the table are to be returned.,all records meeting the full criteria are to be returned.,all records with even partial criteria met are to be returned.,None of the above is correct.,1,A,""""""
+7,The HAVING clause does which of the following?,infoway,2,Acts EXACTLY like a WHERE clause.,Acts like a WHERE clause but is used for columns rather than groups.,Acts like a WHERE clause but is used for groups rows rather than individual rows.,Acts like a WHERE clause but is used for rows rather than columns.,1,C,""""""
+8,With which of the following options the wildcard can be used with?,infoway,1,NOT IN only,LIKE only,IN only,IN and NOT IN,1,B,""""""
+9,When usin the SQL INSERT statement:,infoway,2,rows cannot be copied in mass from one table to another only.,rows can be modified according to criteria only.,rows can either be inserted into a table one at a time or in groups.,rows can be inserted into a table only one at a time only.,1,C,""""""
+10,The ALTER statement can be used to:,infoway,1,change the table data.,change the table structure.,delete rows from the table.,add rows to the table.,1,B,""""""
+11,What command can be used to delete column from a table?,infoway,2,MODIFY TABLE TableName DROP COLUMN ColumnName,ALTER TABLE TableName DROP ColumnName,ALTER TABLE TableName DROP COLUMN ColumnName,Either B or C,1,D,""""""
+12,Which command can be used to add columns to a table?,infoway,2,ALTER TABLE TableName ADD ColumnName,ALTER TABLE TableName ADD COLUMN ColumnName,MODIFY TABLE TableName ADD ColumnName,Either A or B,1,D,""""""
+13,The command to remove rows from a table 'CUSTOMER' is:,infoway,1,DROP FROM CUSTOMER ...,UPDATE FROM CUSTOMER ...,REMOVE FROM CUSTOMER ...,DELETE FROM CUSTOMER WHERE ...,1,D,""""""
+14,"The EMP table has 10 records. It has a not-NULL SALARY column which is also UNIQUE. The SQL statement
+SELECT CUNT(*) FROM emp WHERE SALARY > ALL (SELECT SALARY FROM emp);
+PRINTS",infoway,3,10,9,5,0,1,D,""""""
+15,"The EMP table has 10 records. It has a not-NULL SALARY column which is also UNIQUE. The SQL statement
+SELECT CUNT(*) FROM emp WHERE SALARY > ANY  (SELECT SALARY FROM emp);
+PRINTS",infoway,3,10,9,5,0,1,B,""""""
+16,,infoway,,,,,,1,,""""""
+17,,infoway,,,,,,1,,""""""
+18,,infoway,,,,,,1,,""""""
+19,,infoway,,,,,,1,,""""""
+20,,infoway,,,,,,1,,""""""
+21,,infoway,,,,,,1,,""""""
+22,,infoway,,,,,,1,,""""""
+23,,infoway,,,,,,1,,""""""
+24,,infoway,,,,,,1,,""""""
+25,,infoway,,,,,,1,,""""""
