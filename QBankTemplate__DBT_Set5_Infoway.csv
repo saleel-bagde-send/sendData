@@ -18,13 +18,17 @@ PRINTS",infoway,3,10,9,5,0,1,D,""""""
 15,"The EMP table has 10 records. It has a not-NULL SALARY column which is also UNIQUE. The SQL statement
 SELECT CUNT(*) FROM emp WHERE SALARY > ANY  (SELECT SALARY FROM emp);
 PRINTS",infoway,3,10,9,5,0,1,B,""""""
-16,,infoway,,,,,,1,,""""""
-17,,infoway,,,,,,1,,""""""
-18,,infoway,,,,,,1,,""""""
-19,,infoway,,,,,,1,,""""""
-20,,infoway,,,,,,1,,""""""
-21,,infoway,,,,,,1,,""""""
-22,,infoway,,,,,,1,,""""""
-23,,infoway,,,,,,1,,""""""
-24,,infoway,,,,,,1,,""""""
-25,,infoway,,,,,,1,,""""""
+16,Which of the following join is also called as an 'inner-join'?,infoway,2,Non-Equijoin,Self-Join,Equijoin,None of these,1,C,""""""
+17,Which of the following is NOT a type of SQL constraint?,infoway,2,PRIMARY KEY,ALTERNATE KEY,FOREIGN KEY,UNIQUE,1,B,""""""
+18,Which is an SQL virtual table that is constructed from another table?,infoway,2,view,A relation,Just another table,Query results,1,A,""""""
+19,"Which of the following query finds the total rating of the sailors who have reserved boat ""103""?",infoway,2,"SELECT SUM(s.rating) FROM sailors s, reserves r AND r.bid = 103;","SELECT s.rating FROM sailors s, reserves r WHERE s.sid = r.sid AND r.bid = 103","SELECT COUNT(s.rating) FROM sailors s, reserves r WHERE s.sid = r.sid AND r.bid = 103","SELECT SUM(s.rating) FROM sailors s, reserves r WHERE s.sid = r.sid AND r.bid = 103",1,D,""""""
+20,The SELECT statement SELECT 'Hi' FROM DUAL WHERE NULL=NULL; Will print?,infoway,2,Hi,FLASE,TRUE,Nothing,1,D,""""""
+21,"The statement
+SELECT column1 FROM myTABLE;
+return 10 rows. The statement
+SELECT ALL column1 FROM myTABLE;
+Will return",infoway,3,less than 10 rows,more than 10 rows,exactly 10 rows,None of these,1,C,""""""
+22,Find the name of cities with all entries whose temperatue is in the range of 71 and 89.,infoway,2,SELECT * FROM weather WHERE temperature NOT IN (71 to 89);,SELECT * FROM weather WHERE temperature NOT IN (71 and 89);,SELECT * FROM weather WHERE temperature NOT BETWEEN 71 to 89;,SELECT * FROM weather WHERE temperature BETWEEN 71 AND 89;,1,D,""""""
+23,Find the name of those cities with temperature and condition whose condition is either sunny or cloudy but temperature must be greater than 70F.,infoway,3,"SELECT city, temperature, condition FROM weather WHERE condition = 'sunny' AND condition = 'cloudy' OR temperature > 70;","SELECT city, temperature, condition FROM weather WHERE (condition = 'sunny' OR condition = 'cloudy') OR temperature > 70;","SELECT city, temperature, condition FROM weather WHERE (condition = 'sunny' OR condition = 'cloudy') AND temperature > 70;","SELECT city, temperature, condition FROM weather WHERE condition = 'sunny' AND condition = 'cloudy' AND temperature > 70;",1,C,""""""
+24,Find all tuples having temperature greater than 'Paris'.,infoway,3,SELECT * FROM weather WHERE temperature > (SELECT temperature FROM weather WHERE city = 'Paris'),SELECT * FROM weather WHERE temperature > (SELECT * FROM weather WHERE city = 'Paris'),SELECT * FROM weather WHERE temperature > (SELECT city FROM weather WHERE city = 'Paris'),SELECT * FROM weather WHERE temperature > 'Paris' temperature,1,A,""""""
+25,"In one-to-many relationship, the entity that is on the one side of the relationship is called a(n) _______ entity.",infoway,1,parent,child,instance,subtype,1,A,""""""

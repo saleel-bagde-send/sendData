@@ -1,0 +1,43 @@
+MCQ_No,Question,Bin,Level,Option_A,Option_B,Option_C,Option_D,Marks,Correct_Answer,Explanation
+1,"You own a table called EMPLOYEES with this table structure:
+EMPLOYEE_ID Primary Key, FIRST_NAME, LAST_NAME, HIRE_DATE 
+What happens when you execute this DELETE statement?
+
+DELETE employees;",infoway,1,You get an error because of a primary key violation.,The data and structure of the EMPLOYEES table are deleted.,You get an error because the statement is not syntactically correct.,The data in the EMPLOYEES table is deleted but not the structure.,1,D,""""""
+2,"Evaluate this SQL statement:
+SELECT e.EMPLOYEE_ID,e.LAST_NAME,e.DEPARTMENT_ID, d.DEPARTMENT_NAME FROM EMPLOYEES e, DEPARTMENTS d
+WHERE e.DEPARTMENT_ID = d.DEPARTMENT_ID;
+In the statement, which capabilities of a SELECT statement are performed?",infoway,1,"selection, projection, join","selection, intersection, join","intersection, projection, join","difference, projection, product",1,A,""""""
+3,Which SQL statement generates the alias Annual Salary for the calculated column SALARY*12?,infoway,2,"SELECT ename, salary*12 ‘Annual Salary’ FROM employees;","SELECT ename, salary*12 AS INITCAP(“ANNUAL SALARY”) FROM employees","SELECT ename, salary*12 ""Annual Salary"" FROM employees;","SELECT ename, salary*12 AS Annual Salary FROM employees;",1,C,""""""
+4,"Examine the structure of the EMPLOYEES table:
+
+EMPLOYEE_ID NUMBER Primary Key, FIRST_NAME VARCHAR2(25), LAST_NAME VARCHAR2(25)
+Which statements inserts a row into the table?",infoway,2,INSERT INTO employees (employee_id) VALUES (1000);,"INSERT INTO employees VALUES ('1000', 'John', NULL);","INSERT INTO employees (employee_id, first_name, last_name) VALUES (1000, 'John', ' ');",All of the above,1,D,""""""
+5,"Evaluate the SQL statement:
+SELECT ROUND(45.953, -1), TRUNC(45.936, 2) FROM dual;
+Which values are displayed?",infoway,2,45.95 and 45.93,50 and 45.93,46 and 45,50 and 45.9,1,B,""""""
+6,Which two are true about aggregate functions?,infoway,2,You can use aggregate functions in any clause of a SELECT statement.,"You can use aggregate functions on a table, only by grouping the whole table as one single group.",You cannot group the rows of a table by more than one column while using aggregate functions.,"You can pass column names, expressions, or constants as parameters to an aggregate function.",1,D,""""""
+7,You need to modify the STUDENTS table to add a primary key on the STUDENT_ID column. The table is currently empty. Which statement accomplishes this task?,infoway,3,ALTER TABLE STUDENTS ADD PRIMARY KEY (STUDENT_ID);,ALTER TABLE STUDENTS ADD CONSTRAINT PRIMARY KEY (STUDENT_ID);,ALTER TABLE STUDENTS ADD CONSTRAINT stud_id_pk PRIMARY KEY(STUDENT_ID);,All of the above statements will work.,1,D,""""""
+8,"You need to display the employees who have not been assigned to any department. You write the SELECT statement:
+SELECT LAST_NAME, SALARY, DEPARTMENT_ID FROM EMP WHERE DEPARTMENT_ID = NULL;
+What is true about this SQL statement ?",infoway,3,The column in the WHERE clause should be changed to display the desired results.,The operator in the WHERE clause should be changed to display the desired results.,The WHERE clause should be changed to use an outer join to display the desired results.,The SQL statement displays the desired results.,1,B,""""""
+9,"SELECT ename, sal, 12*sal+100 FROM emp;
+
+The SAL column stores the monthly salary of the employee. Which change must be made to the above syntax to calculate the annual compensation as “monthly salary plus a monthly bonus of $100, multiplied by 12??",infoway,3,"SELECT ename, sal, 12*(sal+100) FROM emp;","SELECT ename, sal+100,*12 FROM emp;",No change is required to achieve the desired results.,"SELECT ename, sal, (12*sal)+100 FROM emp;",1,A,""""""
+10,In which case would you use a FULL OUTER JOIN?,infoway,3,Both tables have NULL values.,You want all unmatched data from one table.,You want all matched and unmatched data from only one table.,You want all matched and unmatched data from both tables.,1,D,""""""
+11,"SELECT empname,hire_date HIREDATE, salary FROM EMP ORDER BY hire_date;
+How will the results be sorted?",infoway,2,descending alphabetically,descending by date,randomly,ascending by date,1,D,""""""
+12,Which statement are true about WHERE and HAVING clauses?,infoway,3,WHERE clause CANNOT be used in a query if the query uses a HAVING clause.,A HAVING clause CANNOT be used in subqueries.,A WHERE clause can be used to restrict both rows and groups.,None of the above.,1,D,""""""
+13,Which two statements are true about WHERE and HAVING clauses?,infoway,3,WHERE clause can be used to restrict rows only.,A HAVING clause can be used to restrict groups only.,Both A and B,None of the above,1,C,""""""
+14,Which aggregate functions are valid on the START_DATE column?,infoway,3,MIN(start_date),SUM(start_date),MAXIMUM(start_date),None of the above,1,A,""""""
+15,Which aggregate functions are valid on the START_DATE column?,infoway,3,MAX(start_date),MIN(start_date),COUNT(start_date),All of the above,1,D,""""""
+16,What does the FORCE option for creating a view do?,infoway,4,creates a view with constraints,creates a view in another schema even if you don’t have privileges,creates a view even if the underlying parent table has constraints,creates a view regardless of whether or not the base tables exist,1,D,""""""
+17,,infoway,,,,,,1,,""""""
+18,,infoway,,,,,,1,,""""""
+19,,infoway,,,,,,1,,""""""
+20,,infoway,,,,,,1,,""""""
+21,,infoway,,,,,,1,,""""""
+22,,infoway,,,,,,1,,""""""
+23,,infoway,,,,,,1,,""""""
+24,,,,,,,,1,,""""""
+25,,,,,,,,1,,""""""
