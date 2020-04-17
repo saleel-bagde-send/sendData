@@ -1,0 +1,33 @@
+MCQ_No,Question,Bin,Level,Option_A,Option_B,Option_C,Option_D,Marks,Correct_Answer,Explanation
+1,"Evaluate these two SQL statements:
+SELECT last_name, salary , hire_date FROM EMPLOYEES ORDER BY salary DESC;
+SELECT last_name, salary , hire_date FROM EMPLOYEES ORDER BY 2 DESC;
+What is true about them?",infoway,2,The second statement returns a syntax error.,The two statements produce identical results.,The two statements can be made to produce identical results by adding a column alias for the salary column in the second SQL statement.,There is no need to specify DESC because the results are sorted in descending order by default.,1,B,""""""
+2,Which statements correctly describe functions that are available in SQL?,infoway,2,TRIM trims the heading or trailing characters (or both) from a character string.,INSTR returns the numeric position of a named character.,"NULLIF compares two expressions and returns null if they are equal, or the first expression if they are not equal.",All of the above.,1,D,""""""
+3,"Evaluate the SQL statement
+DROP TABLE DEPT;
+Which statements are true of the SQL statement?",infoway,2,You cannot roll back this statement.,"All data in the table is deleted, and the table structure is also deleted.",All indexes based on the DEPT table are dropped.,All of the above,1,D,""""""
+4,Which statements about views are true?,infoway,2,A view can be created as read only.,A view can be created as a join on two or more tables.,A view must have aliases defined for the column names in the SELECT statement.,Both A and B,1,D,""""""
+5,In which cases would you use the USING clause?,infoway,2,The tables to be joined have columns of the same name and different data types.,The tables to be joined have columns with the same name and compatible data types.,Both A and B,None of the above,1,C,""""""
+6,What is true of using group functions on columns that contain NULL values?,infoway,3,Group functions on columns ignore NULL values.,Group functions on columns returning dates include NULL values.,Group functions on columns returning numbers include NULL values.,None of the above,1,A,""""""
+7,"SELECT ROUND(TRUNCATE(MOD(1600,10),-1),2) FROM dual;
+What will be displayed?",infoway,3,0.00,0,1,an error statement,1,B,""""""
+8,Which statements about subqueries are true?,infoway,3,subquery can retrieve zero or more rows.,Subqueries CANNOT be nested by more than two levels.,A subquery CANNOT be used in an SQL query statement that uses group functions.,None of the above,1,A,""""""
+9,Which statements are true regarding the default behavior of the ORDER BY clause? ,infoway,3,Numeric values are displayed with the lowest values first.,Null values are left out of the sort.,Character values are displayed from Z to A,Nonw of the above,1,A,""""""
+10,A table can also join to itself known as __________ Join.,,2,Self,Simple,Single,None of the above,1,A,""""""
+11,Which keyword is used with CREATE view statement to create View even if the table does not exist?,,2,Force,Impel,Push,All of the above,1,A,""""""
+12,Which of the following is correct order of Clauses for an SQL Query?,,2,WHERE - ORDER BY - HAVING - GROUP BY,WHERE - LIMIT - GROUP BY - ORDER BY,WHERE - GROUP BY - HAVING - ORDER BY,can be arrange in any order,1,C,""""""
+13,The default parameter type in stored procedures is?,,3,IN?,OUT?,INOUT?,There is no default type?,1,A,""""""
+14,Consider a table OLD with few rows. The statement CREATE TABLE new AS SELECT * FROM OLD WHERE 1=2,,3,copies all the rows from OLD to NEW?,creates a dummy NEW table?,creates an empty NEW table with column definitions same as OLD?,creates a table NEW that acts as a synonym for OLD,1,C,""""""
+15,Choose the correct pattern Matching sign for matching a single character,,1,_?,??,*?,%?,1,A,""""""
+16,"Which operator, when used along with special operators, reverts their output?",infoway,2,NOT?,AND?,OR?,JOIN,1,A,""""""
+17,Rollback and Commit affect,infoway,1,Only DML statements?,Only DDL statements?,Both (a) and (b)?,All statements executed in SQL,1,A,""""""
+18,"The value of INSTR(‘CALIFORNIA’,’A’,1,2) is",infoway,1,2?,1?,10?,9,1,C,""""""
+19,"What is the order of execution of SQL clauses 
+1.having 2.group by 3.where 4.orderby",infoway,1,1 2 3 4?,3 2 1 4?,2 3 4 1?,4 3 1 2,1,B,""""""
+20,,infoway,,,,,,1,,""""""
+21,,infoway,,,,,,1,,""""""
+22,,infoway,,,,,,1,,""""""
+23,,infoway,,,,,,1,,""""""
+24,,infoway,,,,,,1,,""""""
+25,,infoway,,,,,,1,,""""""

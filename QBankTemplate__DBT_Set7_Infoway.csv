@@ -44,6 +44,6 @@ Which are true about the SQL statement?",infoway,2,You can roll back the deletio
 21,A subquery can be used to ___.,infoway,2,convert data to a different format,create groups of data,retrieve data based on an unknown condition,sort data in a specific order,1,C,""""""
 22,Which statements are true about constraints?,infoway,3,A UNIQUE index gets created for columns with PRIMARY KEY and UNIQUE constraints.,The NOT NULL constraint ensures that null values are not permitted for the column.,The UNIQUE constraint does not permit a null value for the column.,Both A and B,1,D,""""""
 23,Which clause should you use to exclude group results?,infoway,2,HAVING,WHERE,RESTRICT,None of the above,1,A,""""""
-24,Which statements about subqueries are true?,,3,A single row subquery can retrieve only one row but many columns.,A single row subquery can use the IN operator.,A multiple row subquery can retrieve multiple rows and multiple columns.,All of the above,1,D,""""""
+24,Which statements about subqueries are true?,infoway,3,A single row subquery can retrieve only one row but many columns.,A single row subquery can use the IN operator.,A multiple row subquery can retrieve multiple rows and multiple columns.,All of the above,1,D,""""""
 25,"SELECT LPAD(salary,10,*) FROM EMP WHERE EMP_ID = 1001;
-If the employee with the EMP_ID 1001 has a salary of 17000, what is displayed?",,2,17000,17000*****,****170.00,*****17000,1,D,""""""
+If the employee with the EMP_ID 1001 has a salary of 17000, what is displayed?",infoway,2,17000,17000*****,****170.00,*****17000,1,D,""""""
