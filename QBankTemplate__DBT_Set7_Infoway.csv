@@ -32,12 +32,18 @@ How will the results be sorted?",infoway,2,descending alphabetically,descending 
 14,Which aggregate functions are valid on the START_DATE column?,infoway,3,MIN(start_date),SUM(start_date),MAXIMUM(start_date),None of the above,1,A,""""""
 15,Which aggregate functions are valid on the START_DATE column?,infoway,3,MAX(start_date),MIN(start_date),COUNT(start_date),All of the above,1,D,""""""
 16,What does the FORCE option for creating a view do?,infoway,4,creates a view with constraints,creates a view in another schema even if you don’t have privileges,creates a view even if the underlying parent table has constraints,creates a view regardless of whether or not the base tables exist,1,D,""""""
-17,,infoway,,,,,,1,,""""""
-18,,infoway,,,,,,1,,""""""
-19,,infoway,,,,,,1,,""""""
-20,,infoway,,,,,,1,,""""""
-21,,infoway,,,,,,1,,""""""
-22,,infoway,,,,,,1,,""""""
-23,,infoway,,,,,,1,,""""""
-24,,,,,,,,1,,""""""
-25,,,,,,,,1,,""""""
+17,What is true regarding subqueries?,infoway,3,The inner query must always return a value or the outer query will give an error.,The inner query returns a value to the outer query.,The inner query always sorts the results of the outer query.,The outer query must return a value to the inner query.,1,B,""""""
+18,Which are attributes of single row functions?,infoway,3,act on each row returned,return one result per row,accept arguments which can be a column or an expression,All of the above,1,D,""""""
+19,"Evaluate the set of SQL statements:
+CREATE TABLE dept (deptno NUMBER(2), dname VARCHAR2(14), loc VARCHAR2(13));
+ROLLBACK;
+DESCRIBE DEPT
+What is true about the set?",infoway,3,The DESCRIBE DEPT statement returns an error ORA-04043: object DEPT does not exist.,The DESCRIBE DEPT statement displays the structure of the DEPT table.,The DESCRIBE DEPT statement displays the structure of the DEPT table only if there is a COMMIT statement introduced before the ROLLBACK statement.,The ROLLBACK statement frees the storage space occupied by the DEPT table.,1,B,""""""
+20,"TRUNCATE TABLE DEPT;
+Which are true about the SQL statement?",infoway,2,You can roll back the deletion of rows after the statement executes.,You can NOT roll back the deletion of rows after the statement executes.,An attempt to use DESCRIBE on the DEPT table after the TRUNCATE statement executes will display an error.,None of the above.,1,B,""""""
+21,A subquery can be used to ___.,infoway,2,convert data to a different format,create groups of data,retrieve data based on an unknown condition,sort data in a specific order,1,C,""""""
+22,Which statements are true about constraints?,infoway,3,A UNIQUE index gets created for columns with PRIMARY KEY and UNIQUE constraints.,The NOT NULL constraint ensures that null values are not permitted for the column.,The UNIQUE constraint does not permit a null value for the column.,Both A and B,1,D,""""""
+23,Which clause should you use to exclude group results?,infoway,2,HAVING,WHERE,RESTRICT,None of the above,1,A,""""""
+24,Which statements about subqueries are true?,,3,A single row subquery can retrieve only one row but many columns.,A single row subquery can use the IN operator.,A multiple row subquery can retrieve multiple rows and multiple columns.,All of the above,1,D,""""""
+25,"SELECT LPAD(salary,10,*) FROM EMP WHERE EMP_ID = 1001;
+If the employee with the EMP_ID 1001 has a salary of 17000, what is displayed?",,2,17000,17000*****,****170.00,*****17000,1,D,""""""
