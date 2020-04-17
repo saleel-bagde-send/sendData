@@ -1,0 +1,142 @@
+What will be the output of the following statement?
+select "Hello" # "World " from dual;
+
+Hello
+Hello World
+Hello # World
+Error
+
+Ans(A)
+-----------------------------------------------------------------------------
+What will be the output of the following statement?
+select 10 + 10 as Result from DUAL where false;
+0
+20
+NULL
+ERROR
+
+Ans(C)
+-----------------------------------------------------------------------------
+What will be the output of the following statement?
+select 10 + 10 as Result from DUAL where true;
+
+0
+20
+NULL
+ERROR
+
+Ans(B)
+-----------------------------------------------------------------------------
+What will be the output of the following statement?
+select 10 + 10 as Result from DUAL where 10-10;
+
+0
+20
+NULL
+ERROR
+
+Ans(C)
+-----------------------------------------------------------------------------
+What will be the output of the following statement?
+select 10 + 10 as Result from DUAL where 10-0;
+
+0
+20
+NULL
+ERROR
+
+Ans(B)
+-----------------------------------------------------------------------------
+What will be the output of the following statement?
+select 10 + 10 as Result from DUAL where 10-30;
+
+0
+20
+NULL
+ERROR
+
+Ans(B)
+-----------------------------------------------------------------------------
+What will be the output of the following statement?
+select  '5'*'5' as Result from DUAL;
+
+0
+55
+25
+Error
+
+Ans(C)
+-----------------------------------------------------------------------------
+What will be the output of the following statement?
+select  5 * 5 - '-5' as Result from DUAL;
+0
+25
+30
+Error
+
+Ans(C)
+-----------------------------------------------------------------------------
+Which two are true about aggregate functions?
+You can use aggregate functions in any clause of a SELECT statement.
+You can use aggregate functions on a table, only by grouping the whole table as one single group.
+You cannot group the rows of a table by more than one column while using aggregate functions.
+You can pass column names, expressions, constants, or functions as parameters to an aggregate function.
+
+Ans(D)
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
+
+
+Ans()
+-----------------------------------------------------------------------------
