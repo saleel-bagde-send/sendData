@@ -1,9 +1,14 @@
 Step: download google chrome
 
-command:- wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+command:- 
 
-install google chrome
-command: 
+(1) wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+_______________________________________________________________________________________________________________________
+Step: install google chrome
+
+command:-  
+ 
 (1) sudo apt install ./google-chrome-stable_current_amd64.deb
 (2) google-chrome (To start chrome)
 _______________________________________________________________________________________________________________________
@@ -16,14 +21,14 @@ Note: Check java if available with command:~$ (java -version)
 (1) sudo apt-get update 
 (2) sudo apt-get install openjdk-8-jdk 
 (3) java -version (check java version)
-_________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: create a group
 
 command:~
 
 (1) sudo addgroup hadoop (i.e. hadoop is a GROUPNAME)
-____________________________________________
+_______________________________________________________________________________________________________________________
 
 Step:  create user within group
 
@@ -54,14 +59,14 @@ command:~
 	Adding user `hadoopusr' to group `sudo' ...
 	Adding user hadoopusr to group sudo
 	Done.
-_____________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step:  Install open SSH server
 
 command:~
  
 (1) sudo apt install openssh-server (Press "Y" to continue and wait to complete the process. )
-_____________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: Switch to created user for further installation (in my case my user is hadoopusr)
 
@@ -69,7 +74,8 @@ command:~
 
 (1) clear
 (2) su - hadoopusr 	i.e. su - <your use_rname> 
-_____________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
+
  
 Step:  download hadoop software
  
@@ -85,7 +91,8 @@ Download any version of hadoop you wish (i have downloaded 3.2.1)
 
 Note: by default Hadoop will be downloaded on /home/ubuntu/Downloads
  folder.
-_____________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
+
 
 Step: extract the file 
 
@@ -96,14 +103,14 @@ command:-
 (2) sudo tar -xvzf hadoop-3.2.1.tar.gz 
 
 Note: It will create hadoop-3.2.1 folder in /home/ubuntu/Downloads 
-_____________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: move the extracted hadoop file to created user
 
 command:- 
 
 (1) sudo mv /home/ubuntu/Downloads/hadoop-3.2.1 /usr/local/hadoop 
-_____________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: goto /usr/local/hadoop 
 
@@ -112,7 +119,7 @@ command:-
 (1) cd /usr/local/hadoop
 (2) pwd (to check present working dir)
 (3) ll
-_____________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: then give the ownership to the directory where file is moved eg:-
 
@@ -122,7 +129,7 @@ command:-
 
 
 Note:- This command will give ownership to all file and folders
-_____________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: To create a ssh key
 
@@ -159,7 +166,8 @@ The key's randomart image is:
 (3) chmod 0600 ~/.ssh/authorized_keys
 (4) ssh localhost   (to connect to localhost)
 (5) exit	     (to logout from localhost)
-_____________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________________________
 
 
 Step: edit ~/.bashrc file
@@ -171,20 +179,20 @@ command:~
 (2)  Copy the below lines and paste at the end of ~/.bashrc file
 
         export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-	export HADOOP_HOME=/usr/local/hadoop
-	export PATH=$PATH:$HADOOP_HOME/bin
-	export PATH=$PATH:$HADOOP_HOME/sbin
-	export HADOOP_MAPRED_HOME=$HADOOP_HOME
-	export HADOOP_COMMON_HOME=$HADOOP_HOME
-	export HADOOP_HDFS_HOME=$HADOOP_HOME
-	export YARN_HOME=$HADOOP_HOME
-	export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
-	export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
+		export HADOOP_HOME=/usr/local/hadoop
+		export PATH=$PATH:$HADOOP_HOME/bin
+		export PATH=$PATH:$HADOOP_HOME/sbin
+		export HADOOP_MAPRED_HOME=$HADOOP_HOME
+		export HADOOP_COMMON_HOME=$HADOOP_HOME
+		export HADOOP_HDFS_HOME=$HADOOP_HOME
+		export YARN_HOME=$HADOOP_HOME
+		export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+		export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
 	
 	Save the file by pressing ctrl + X and press "Y" and enter key.
 
 (3) source ~/.bashrc
-_____________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: edit hadoop-env.sh file
 
@@ -197,7 +205,7 @@ command:~
 	export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 	
 	Save the file by pressing ctrl + X and press "Y" and enter key.
-_____________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: edit core-site.xml file
 
@@ -214,7 +222,7 @@ command:~
 	</property>
 	
 	Save the file by pressing ctrl + X and press "Y" and enter key.
-_____________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: edit hdfs-site.xml
 
@@ -238,7 +246,7 @@ command:~
 	</property>
 	
 	Save the file by pressing ctrl + X and press "Y" and enter key.
-_____________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: edit yarn-site.xml
 
@@ -258,7 +266,7 @@ command:~
 	</property>
 	
 	Save the file by pressing ctrl + X and press "Y" and enter key.
-_____________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: edit mapred-site.xml
 
@@ -274,7 +282,7 @@ command:~
 	</property>
 	
 	Save the file by pressing ctrl + X and press "Y" and enter key.
-_____________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: Make directory for namenode and datanode because both are necessary for hadoop architecture
 
@@ -284,7 +292,7 @@ command:~
 (2) sudo mkdir -p /usr/local/hadoop_space
 (3) sudo mkdir -p /usr/local/hadoop_space/namenode
 (4) sudo mkdir -p /usr/local/hadoop_space/datanode
-_____________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: *** PUT OWNER PERMISSIONS TO THE FOLDER ***
 
@@ -293,7 +301,7 @@ command:~
 (1) sudo chown -R hadoopusr /usr/local/hadoop_space
 (2) cd
 (3) pwd (you must be in /home/hadoopusr folder)
-_____________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: *** FORMAT HDFS NAMENODE ***
 
@@ -301,7 +309,7 @@ command:~
 
 (1) hdfs namenode -format
 
-_____________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: To start hadoop
 
@@ -315,7 +323,7 @@ command:~
 (2) start-yarn.sh (to start resources).
 
 Note :- MOSTLY type command start-all.sh to start all services !!
-_________________________________________________________________________
+_______________________________________________________________________________________________________________________
 
 Step: To check all running services ;
 
@@ -338,7 +346,7 @@ Step: To hadoop UI in browser .
 command:~
 
 (1) localhost:9870 (9870 is default port)
-_______________________________________________________________________________________-
+_______________________________________________________________________________________________________________________
 
 Step: To stop hadoop
 
@@ -355,3 +363,5 @@ Note :- MOSTLY type command stop-all.sh to stop all services.
 
 
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+
