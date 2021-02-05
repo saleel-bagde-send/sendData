@@ -1,0 +1,112 @@
+Why do we use a stored procedure instead of a query?
+
+Now Let’s understand with an example
+
+Now let’s say we want all employees from the table whose Salary is greater than 50000.
+
+mysql> select * from emp where sal>50000;
+
+when I execute the above SQL query what’s going to happen behind the scene?
+
+The first time when we execute the query, the syntax is checked, the query is compiled and an execution plan is created for the query. And the database engine executes the above query returns the data back to us.
+
+Now when we execute you above SQL query again, then SQL reuses the execution plan and it will return data quickly.
+
+But if we change the where clause parameter, if I pass sal is equal to 40000 then the SQL is not going to reuse the execution plan.
+
+It will create a new plan for this query.
+
+mysql> select Name from emp where sal>40000
+ 
+But in the case of the stored procedure, it reuses the execution plan.
+
+------------------------------------------------------------------------------
+
+SELECT *
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+
+------------------------------------------------------------------------------
+
+MySQL permits routines to contain DDL statements, such as CREATE and DROP. MySQL also permits stored procedures (but not stored functions) to contain SQL transaction statements such as COMMIT. Stored functions may not contain statements that perform explicit or implicit commit or rollback.
+
+------------------------------------------------------------------------------
+
+Statements that return a result set can be used within a stored procedure but not within a stored function. This prohibition includes SELECT statements that do not have an INTO var_list clause
+
+------------------------------------------------------------------------------
+
+A routine is considered “deterministic” if it always produces the same result for the same input parameters, and “not deterministic” otherwise. If neither DETERMINISTIC nor NOT DETERMINISTIC is given in the routine definition, the default is NOT DETERMINISTIC. To declare that a function is deterministic, you must specify DETERMINISTIC explicitly.
+
+------------------------------------------------------------------------------
+
+READS SQL DATA: 
+
+This explicitly tells to MySQL that the function will ONLY read data from databases, thus, it does not contain instructions that modify data, but it contains SQL instructions that read data (e.q. SELECT).
+
+MODIFIES SQL DATA:
+
+This indicates that the routine contains statements that may write data (for example, it contain UPDATE, INSERT, DELETE or ALTER instructions).
+
+NO SQL:
+
+This indicates that the routine contains no SQL statements.
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+
